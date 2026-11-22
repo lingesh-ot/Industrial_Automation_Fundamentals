@@ -1,0 +1,138 @@
+### 1. What is Industrial Automation?
+
+* Industrial Automation means using machines, computers, sensors, controllers, and software to operate industrial processes with minimum human intervention.
+* Instead of a human manually controlling every machine, an automated system performs tasks according to programmed instructions.
+
+**Eg: Water Tank Filling**
+
+**Without automation:**
+1. A worker checks the water level.
+2. The worker switches ON the water pump.
+3. The worker waits until the tank is full.
+4. The worker switches OFF the pump.
+
+**With automation:**
+1. A sensor detects the water level.
+2. A controller receives the sensor information.
+3. The controller decides whether the pump should run.
+4. The pump automatically starts.
+5. When the tank becomes full, the controller stops the pump.
+
+
+
+### Why do industries use automation?
+
+| Purpose | Explanation |
+| :--- | :--- |
+| **Productivity** | Produce more products in less time |
+| **Accuracy** | Reduce human errors |
+| **Safety** | Reduce human exposure to dangerous machinery |
+| **Efficiency** | Reduce unnecessary energy and resource usage |
+| **Reliability** | Maintain consistent operations |
+| **Monitoring** | Monitor machines and processes continuously |
+
+**Remember:** Industrial automation does not necessarily eliminate humans. Humans still program, supervise, maintain, and make important decisions.
+
+---
+
+### 2. What is a PLC?
+
+PLC stands for Programmable Logic Controller.
+
+A PLC is an industrial computer used to monitor inputs, execute programmed logic, and control outputs.
+
+In simple words:
+A PLC is the brain of an automated machine.
+
+#### What does a PLC do?
+A PLC performs three basic operations:
+1. Receives information from sensors.
+2. Processes that information using its program.
+3. Sends commands to actuators and other output devices.
+
+#### Example: Water tank
+Suppose we have a water tank with:
+- A low-level sensor.
+- A high-level sensor.
+- A water pump.
+- A PLC.
+
+The control logic could be:
+- If the water level is LOW → Start the pump.
+- If the water level is HIGH → Stop the pump.
+
+#### Main components of a PLC
+
+| Component | Function |
+| :--- | :--- |
+| **Power Supply** | Provides electrical power |
+| **CPU** | Executes the PLC program |
+| **Input Module** | Receives sensor signals |
+| **Output Module** | Sends control signals |
+| **Memory** | Stores the program and data |
+| **Communication Port** | Communicates with other devices |
+
+#### What is PLC programming?
+PLC programming means writing instructions that tell a machine what to do.
+
+Common PLC programming languages include:
+- Ladder Diagram (LD)
+- Function Block Diagram (FBD)
+- Structured Text (ST)
+- Sequential Function Chart (SFC)
+
+For beginners, start with Ladder Logic.
+
+---
+
+### 3. What is SCADA?
+
+SCADA stands for Supervisory Control and Data Acquisition.
+
+SCADA is a system used to monitor and supervise industrial processes from a central location.
+
+In simple words:
+PLC controls the machine. SCADA allows operators to monitor and supervise the machine from a computer.
+
+#### Example: Water treatment plant
+Imagine a water treatment plant has five water tanks in different locations.
+
+Without SCADA, workers may need to visit each location to check the water levels.
+
+With SCADA, an operator can sit in a control room and monitor:
+- Water levels in all five tanks.
+- Pump operating status.
+- Water pressure.
+- Temperature.
+- Equipment alarms.
+- Production information.
+
+The operator may also send commands to start or stop pumps, if the control system permits it.
+
+#### How does SCADA work?
+The basic working process:
+1. Sensors collect information from the industrial process.
+2. PLCs or RTUs receive the sensor information.
+3. Information travels through an industrial communication network.
+4. SCADA collects and displays the information.
+5. Operators monitor the process and issue supervisory commands.
+
+#### Important SCADA components
+| **SCADA Server** | Collects and manages process information |
+| **HMI** | Displays process information to operators |
+| **PLC** | Controls industrial equipment |
+| **RTU** | Collects field information and performs remote control |
+| **Communication Network** | Transfers information |
+| **Historian** | Stores historical process data |
+| **Alarm System** | Alerts operators about abnormal conditions |
+
+ What is an RTU?
+RTU stands for Remote Terminal Unit.
+
+An RTU is an industrial electronic device used to collect data from remote locations and communicate with a control center.
+
+For example, a water company might have water pumping stations spread across a large geographical area. RTUs help monitor and control those remote stations.
+
+**Remember the difference:**
+- **PLC:** Controls machines and processes.
+- **SCADA:** Supervises and monitors industrial processes across locations.
