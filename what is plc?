@@ -1,0 +1,54 @@
+What is PLC?
+PLC (programmable logic controller) is a industrial device and it is a rugged computer used in industry which is used control the industrial process .
+it reads input signals from sensors or switches, runs programmed logic, and controls output devices like motors or valves in real time.
+
+PLC programming launguages are standardised undrer the IEC 61131-3.
+ IEC->International Electrotechnical Commission ->  global organization that publishes international standards for electrical, electronic, and related technologies
+  -> which they ensures safety , productivity ,reliablity and vendor neutral can able to communicate diffrent plc across different vendors.
+
+the IEC 61131 is the IEC standardised for the plc programmings .
+
+PLC programming languages are standardized under IEC 61131-3 and the types of core programming languages  are 
+Ladder Diagram (LD) ->  A graphical language modeled after electrical relay circuits using rungs, contacts, and coils
+Function Block Diagram (FBD) ->  A graphical language that connects reusable blocks with inputs and outputs.
+Sequential Function Charts (SFC) ->  A graphical flowchart-style language using steps, transitions, and branches.
+Structured Text (ST),-> A high-level, text-based language similar to Pascal or C. It handles complex math, loops, arrays, and data processing.
+and Instruction List (IL)-> A low-level, assembly-like text language. rarely used nowadays.
+
+types of plc?
+1.Compact / Nano / Micro PLCs -> they are compact and small . they are all in one with  "combining power supply, CPU, and fixed built-in I/O (20-40 points).all are combined "
+->they are used in Standalone machines, packaging units, conveyors, HVAC, and small pumping stations.
+2.Modular PLCs -> Separate CPU, power supply, and snap-on I/O modules . you can customise and expand the modules. they are used in ->Mid-to-large production lines,
+automotive assembly, and material handling systems.
+3.Rack-Mounted PLCs -> Heavy-duty modular systems plugged into a high-speed backplane Supports thousands of I/O points, redundant CPUs, and fast data buses. they are fastest 
+and high speed processing . they are used in -> Large process plants, oil and gas, power generation, and chemical manufacturing.
+4.-> Safety PLCs -> used in Emergency stops, light curtains, robotic work cells, and high-risk press machinery.
+5.-> Soft PLCs / PC-Based Control -> PLC runtime software running on an industrial PC (IPC) or edge device, combining deterministic control with IT/cloud connectivity. they 
+are used in -> Smart factories (Industry 4.0), machine vision, high-speed motion control, and data-heavy analytics.
+
+
+
+
+Types of symbols in  Ladder Diagram (LD)
+
+Contacts & Coils
+    | | -> Normally Open Contact (NO) - True when bit = 1 - Start button, sensor
+    |/| -> Normally Closed Contact (NC) - True when bit = 0 - Stop button, safety
+    |P| -> Rising Edge Contact - True for one scan on 0->1 - One-shot
+    |N| -> Falling Edge Contact - True for one scan on 1->0 - Detect release
+    ( ) -> Coil - Turns bit ON while rung is true - Motor, lamp, flag
+    (/) -> Negated Coil - Turns bit ON when rung is false - Inverted output
+    (S) -> Set Coil (Latch) - Forces bit ON and holds it - Memory / retain
+    (R) -> Reset Coil (Unlatch) - Forces bit OFF - Clear memory
+Timers & Counters
+Instruction	Full Form	Simple Meaning	Example
+TON	Timer On-Delay	->Wait before turning ON	Motor starts after 5 seconds
+TOF	Timer Off-Delay	->Wait before turning OFF	Fan runs 5 seconds after motor stops
+TP	Pulse Timer	    ->Turn ON for a fixed time	Spray runs for 3 seconds
+CTU	Count Up	      ->Count from low to high	Count 10 bottles
+CTD	Count Down	     ->Count from high to low	Count 10 bottles remaining
+CTUD	Count Up/Down	  ->Count both up and down	Count cars entering and leaving a parking lot
+Comparison & Data / Math
+    > >= < <= = <> -> Comparison blocks - Compare two values - Thresholds, limits
+    MOV -> Move - Copy value - Transfer data
+    ADD / SUB / MUL / DIV -> Math - Arithmetic operations - Calculations
